@@ -1,0 +1,19 @@
+<%- include('../partials/header') %>
+
+<div class="white-space"></div>
+<form action="/sign_in" method="POST">
+  <div class="border flex-box">
+    <label for="username">Username:</label>
+    <br />
+    <input
+      type="text"
+      name="username"
+      class="input-text"
+      placeholder="e.g Bhagwant"
+    />
+
+    <input type="submit" value="Sign In" class="input-btn" />
+  </div>
+</form>
+
+<%- include('../partials/footer') %>
