@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="./css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Clucks</title>
+</head>
+<body>
+    
+    <div class="bottom-border">
+        <ul class="navbar">
+          <li class="icon a-icon">
+              <a href="/" class="a-icon" style="text-decoration:none">
+                  <figure>
+                      <img src="./images/chicken.jpg" alt="chicken" class="header-icon  a-icon">
+                  </figure>
+              </a>
+          </li>
+      
+      
+          <% if (username) { %>
+          <form action="/sign_out" method="POST" class="flex-row">
+              
+            <li class="li-flex nav-link">
+                  <a href="/new" class="a-btn" >clusks</a></li>
+            <li  class="li-flex centre-text"><%= username %> </li>
+            <li  class="li-flex nav-link"> 
+                <input type="submit" name="sign_out"  class="a-btn btn" value=" Sign Out" ">
+               
+                
+              </li>
+          </form>
+        <%  } else { %>
+          <li  class="li-flex nav-link margin"><a href="/new" class="a-btn">clusks</a></li>
+          <li  class="li-flex nav-link"><a href="/sign_in" class="a-btn">Sign In</a></li>
+          
+          <% } %>
+          
+          </ul>
+      </div>
+      <div class="container">

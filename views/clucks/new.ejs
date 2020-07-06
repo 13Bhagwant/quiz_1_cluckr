@@ -1,0 +1,21 @@
+<%- include('../partials/header') %>
+<div class="white-space"></div>
+<form action="/clucks" method="POST">
+  <div class="border flex-box">
+      <label for="content">Content</label>
+    <textarea name="content" class="input-text"  rows="5" placeholder="What to cluck about" ></textarea>
+    
+    <label for="url_image">Image URL:</label>
+    <br />
+    <input
+      type="text"
+      name="url_image"
+      class="input-text"
+      placeholder="e.g http://imageurl.gif"
+    />
+
+    <input type="submit" value="Cluck" class="input-btn" />
+  </div>
+</form>
+
+<%- include('../partials/footer') %>

@@ -1,0 +1,35 @@
+<%- include('../partials/header') %>
+<div class="flex-row">
+  <div class="trending">
+    Trending Tags
+    <%= trend %> 
+  </div>
+  <div class="border flex-box">  
+    <% clucks.forEach(cluck => { %>
+<div class="card border flex-row">
+  <img
+  src="./images/chicken.jpg"
+  alt="Chicken"
+  class="hero-icon"
+  />
+  <div class="flex-box icon ">
+    <div class="flex-row">
+      <h3>
+        <%= cluck.username %> ➻  
+        </h3>
+       <p class="p-margin" >
+         <%=  friendlyDate(cluck.createdAt) %>
+        </p>
+        </div>
+        <p><%= cluck.content %></p>
+        <figure>
+          <img src=" <%= cluck.image_url %>" alt="" class="url-image">
+          </figure>
+          
+          </div>
+          
+          </div>
+          <% }); %>
+          </div>
+          </div>
+<%- include('../partials/footer') %>
